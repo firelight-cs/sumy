@@ -12,6 +12,7 @@ import nltk
 from .._compat import to_string, to_unicode, unicode
 from ..utils import normalize_language
 
+nltk.download('punkt_tab')
 
 class DefaultWordTokenizer(object):
     """NLTK tokenizer"""
