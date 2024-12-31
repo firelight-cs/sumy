@@ -172,10 +172,12 @@ class Tokenizer(object):
         "ukrainian": ["ім.", "о.", "вул.", "просп.", "бул.", "пров.", "пл.", "г.", "р.", "див.", "п.", "с.", "м."],
         "greek": ["π.χ", "κ.α", "Α.Ε", "Ο.Ε", "κ.λπ", "κ.τ.λ", "λ.χ", "χμ", "χλμ", "Υ.Γ", "τηλ", "π.Χ",
                   "μ.Χ", "π.μ", "μ.μ", "δηλ", "βλ", "κ.ο.κ", "σελ", "κεφ", "χιλ", "αρ"],
+        "russian": ["г.", "д.", "ул.", "т.д", "т.п", "ст.", "рис.", "сек."],
     }
 
     SPECIAL_SENTENCE_TOKENIZERS = {
         'ukrainian': nltk.RegexpTokenizer(r'[.!?…»]', gaps=True),
+        'russian': nltk.RegexpTokenizer(r'[.!?…]', gaps=True),
         'hebrew': nltk.RegexpTokenizer(r'\.\s+', gaps=True),
         'japanese': nltk.RegexpTokenizer('[^　！？。]*[！？。]'),
         'chinese': nltk.RegexpTokenizer('[^　！？。]*[！？。]'),

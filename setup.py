@@ -92,6 +92,7 @@ setup(
         "Natural Language :: Spanish",
         "Natural Language :: Swedish",
         "Natural Language :: Ukrainian",
+        "Natural Language :: Russian",
         "Natural Language :: Greek",
         "Natural Language :: Arabic",
         "Natural Language :: Thai",

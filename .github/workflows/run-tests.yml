@@ -60,7 +60,7 @@ jobs:
           pip install .
           # https://stackoverflow.com/a/69439779/2988107
           pip install --upgrade numpy tinysegmenter jieba konlpy hebrew_tokenizer "tweepy<4.0.0" greek-stemmer-pos "lxml[html_clean]"
-          python -c "import nltk; nltk.download('punkt')"
+          python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"
           pip install --upgrade pytest codecov pytest-cov
 
       - run: pytest tests
