@@ -12,7 +12,7 @@ with open("README.md") as readme:
 
 
 dependencies = [
-    "lxml_html_clean>=0.4.1"
+    "lxml_html_clean>=0.4.1",
     "docopt-ng>=0.6.1",
     "breadability>=0.1.20",
     "requests>=2.7.0",
