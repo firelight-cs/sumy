@@ -21,7 +21,6 @@ def download_nltk_resources():
         nltk.data.find('tokenizers/punkt_tab')
     except LookupError:
         nltk.download('punkt_tab')
-
 download_nltk_resources()
 
 
